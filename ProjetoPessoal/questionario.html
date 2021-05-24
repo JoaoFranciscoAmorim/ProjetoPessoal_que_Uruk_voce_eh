@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="funcoes.js"></script>
+<body>
+    <div id="interface">
+        <header>
+            <h1>Qual Uruk você é?</h1>
+        </header>
+        <section>
+            
+            <br>
+        <form>
+            <fieldset id="qum" oninput="funcUm();"> <legend>Q 01 - O quanto você se considera ligado à natureza e ao meio ambiente?</legend>
+                <input type="radio" name="Um" id="qumum" value="1" checked> <label for="qumum">Não sou muito ligado à natureza.</label>
+                <!--Colocar 'checked' no primeiro input faz com que ele já comece marcado-->
+                <br>
+                <input type="radio" name="Um" id="qumdois" value="2"> <label for="qumdois">Até ligo para a natureza, mas não muito.</label>
+                <br>
+                <input type="radio" name="Um" id="qumtres" value="3"> <label for="qumtres">Sou uno com a natureza.</label>
+            </fieldset>
+
+            <fieldset id="qdois" oninput="funcDois();"> <legend>Q 02 - Você é uma pessoa criativa e imaginativa?</legend>
+                <input type="radio" name="Dois" id="qdoisum" value="1" checked> <label for="qdoisum">Sim, estou sempre colocando minha criatividade e imaginação fértil em prática.</label>
+                
+                <br>
+                <input type="radio" name="Dois" id="qdoisdois" value="2"> <label for="qdoisdois">Até tenho uma certa criatividade em algumas ocasiões, mas estas ocasiões são raras.</label>
+                <br>
+                <input type="radio" name="Dois" id="qdoistres" value="3"> <label for="qdoistres">Não sou muito criativo não.</label>
+            </fieldset>
+
+                <fieldset id="qtres" oninput="funcTres();"> <legend>Q 03 - Você se considera uma pessoa calma?</legend>
+                <input type="radio" name="Tres" id="qtresum" value="1" checked> <label for="qtresum">Sim, sou uma pessoa calma sempre.</label>
+                
+                <br>
+                <input type="radio" name="Tres" id="qtresdois" value="2"> <label for="qtresdois">Sou calmo, até certo ponto.</label>
+                <br>
+                <input type="radio" name="Tres" id="qtrestres" value="3"> <label for="qtrestres">Definitivamente, não sou uma pessoa calma.</label>
+            </fieldset>
+
+            <fieldset id="qquatro" oninput="funcQuatro();"> <legend>Q 04 - Você é proativo e pensa antecipadamente?</legend>
+                <input type="radio" name="Quatro" id="qquatroum" value="1" checked> <label for="qquatroum">Não. Eu deixo a vida me levar e só penso em algo depois que acontece.</label>
+                
+                <br>
+                <input type="radio" name="Quatro" id="qquatrodois" value="2"> <label for="qquatrodois">Só penso antecipadamente em soluções de problemas que sejam mais sérios.</label>
+                <br>
+                <input type="radio" name="Quatro" id="qquatrotres" value="3"> <label for="qquatrotres">Sim, sempre penso em soluções de problemas antecipadamente, não importa quais sejam.</label>
+            </fieldset>
+
+            <fieldset id="qcinco" oninput="funcCinco();"> <legend>Q 05 - Geralmente, em situações sociais ou amorosas, você toma a iniciativa?</legend>
+                <input type="radio" name="Cinco" id="qcincoum" value="1" checked> <label for="qcincoum">Eu nunca tomo a iniciativa. Sempre deixo outras pessoas tomarem e só observo.</label>
+                
+                <br>
+                <input type="radio" name="Cinco" id="qcincodois" value="2"> <label for="qcincodois">Eu tomo a iniciativa apenas em situações que vejo que é a única maneira.</label>
+                <br>
+                <input type="radio" name="Cinco" id="qcincotres" value="3"> <label for="qcincotres">Eu sempre tomo a iniciativa, em praticamente qualquer situação.</label>
+            </fieldset>
+
+            <fieldset id="qseis" oninput="funcSeis();"> <legend>Q 06 - Você aprecia as artes em geral, como música, cinema, pinturas etc?</legend>
+                <input type="radio" name="Seis" id="qseisum" value="1" checked> <label for="qseisum">Aprecio e também pratico. Sou um artista nato.</label>
+                
+                <br>
+                <input type="radio" name="Seis" id="qseisdois" value="2"> <label for="qseisdois">Geralmente aprecio, mas só de longe.</label>
+                <br>
+                <input type="radio" name="Seis" id="qseistres" value="3"> <label for="qseistres">Não sou uma pessoa particularmente artística.</label>
+            </fieldset>
+
+            <fieldset id="qsete" oninput="funcSete();"> <legend>Q 07 - Você é, geralmente, bastante falatório?</legend>
+                <input type="radio" name="Sete" id="qseteum" value="1" checked> <label for="qseteum">Não sou muito falatório.</label>
+                
+                <br>
+                <input type="radio" name="Sete" id="qsetedois" value="2"> <label for="qsetedois">Apenas quando a situação demanda.</label>
+                <br>
+                <input type="radio" name="Sete" id="qsetetres" value="3"> <label for="qsetetres">Sim, sou bastante falatório, em grande parte do tempo.</label>
+            </fieldset>
+
+            <fieldset id="qoito" oninput="funcOito();"> <legend>Q 08 - Você geralmente é considerado, pelos outros, uma pessoa engraçada?</legend>
+                <input type="radio" name="Oito" id="qoitoum" value="1" checked> <label for="qoitoum">Sim, já me disseram que sou engraçado muitas vezes.</label>
+                
+                <br>
+                <input type="radio" name="Oito" id="qoitodois" value="2"> <label for="qoitodois">Já me disseram isso, porém pouquíssimas vezes.</label>
+                <br>
+                <input type="radio" name="Oito" id="qoitotres" value="3"> <label for="qoitotres">Nunca me disseram isso.</label>
+            </fieldset>
+
+        </form>
+        
+            
+            <button class="bota" type="button" onclick="ret();">Revelar</button>
+        </section>
+        <section>
+            
+            
+            <picture class="figura">
+                <img id="oculos" src="" alt="">
+            </picture>
+            
+            <br>
+            <a class="botao" href="index.html">Voltar à Página Inicial</a>
+        </section>
+        <footer>
+            <p><strong> 2021 - by João Francisco Amorim</strong>
+            </p>
+            <p><a class="li" href="https://www.linkedin.com/in/jo%C3%A3o-francisco-ribeiro-de-campos-amorim-9575bb19b/" target="_blank">LinkedIn</a>  - <a class="li" href="https://github.com/JoaoFranciscoAmorim" target="_blank">GitHub</a> </p>
+        </footer>
+    </div>
+</body>
+</html>
